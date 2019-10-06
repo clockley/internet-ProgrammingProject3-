@@ -16,8 +16,8 @@ function calcMedian(array) {
 }
 
 function calcMode(array) {
-    console.log(array);
     var ret = "";
+    var nOfm = 0;
     var mp = new Map();
     var mn = calcMean(array);
     array.forEach(
@@ -31,10 +31,14 @@ function calcMode(array) {
     mp.forEach(
         function(v, k, m) {
             if (v == mmax) {
+                nOfm++;
                 ret += k.toFixed(2)+" ";
             }
         }
     )
+    if (nOfm == array.length) {
+        ret = "";
+    }
     return ret;
 }
 
