@@ -1,0 +1,53 @@
+<!DOCTYPE>
+<html>
+<head>
+    <script type="text/javascript" src="script.js"></script>
+    <title>Statistical Calculator</title>
+    <h2>Statistical Calculator</h2>
+    <style>
+        label {
+            display: inline-block;
+            width: 10%;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Enter 5 to 20 numbers (ranging in value between 0 and 100).<br>Exactly one (1) space must seperate each number.
+    </p>
+    <form>
+        <textarea id="input" rows="4" cols="50" required></textarea><br />
+        <input type="reset" value="Reset">
+        <input type="button" value="Submit" onclick="return performStatistics()">
+    </form>
+
+    <div>
+        <label for="OutMin">Min</label>
+        <input name="OutMin" type="text" id="min" readonly />
+        <br />
+        <label for="OutMax">Max</label>
+        <input name="OutMax" type="text" id="max" readonly />
+        <br />
+        <label for="OutSum">Sum</label>
+        <input name="OutSum" type="text" id="sum" readonly />
+        <br />
+        <label for="OutMean">Mean</label>
+        <input name="OutMean" type="text" id="mean" readonly />
+        <br />
+        <label for="OutMedian">Median</label>
+        <input name="OutMedian" type="text" id="median" readonly />
+        <br />
+        <label for="OutMode">Mode</label>
+        <input name="OutMode" type="text" id="mode" readonly />
+        <br />
+        <label for="OutVariance">Variance</label>
+        <input name="OutVariance" type="text" id="variance" readonly />
+        <br />
+        <label for="OutStdDev">Std. Dev</label>
+        <input name="OutStdDev" type="text" id="stddev" readonly />
+    </div>
+    <a href="../index.html">Link to ePortfolio</a>
+</body>
+
+</html>
